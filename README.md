@@ -1,1 +1,0 @@
-# gfxofficial.github.io
