@@ -1,0 +1,571 @@
+/*IMPORTS*/
+@font-face {
+    font-family: 'Satoshi';
+    src: url('fonts/Satoshi-Black.woff2') format('woff2'),
+    url('fonts/Satoshi-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('fonts/Satoshi-Medium.woff2') format('woff2'),
+    url('fonts/Satoshi-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('fonts/Satoshi-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
+/*PROJECT WIDE STYLE SETTING*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Satoshi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    background: #fff;
+    font-weight: 600;
+    overscroll-behavior-y: none;
+}
+
+
+::selection {
+    background: rgba(0,0,0,0.15);
+}
+a, .hover {
+    color: inherit;
+    -webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;
+}
+a:hover, .hover:hover {
+    opacity: 0.48 !important;
+}
+/*NAVBAR, FOOTER, AND HEADER STYLING*/
+header {
+    padding: 40px;
+    /*padding-bottom: 0;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+header.footer {
+    padding: 40px;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    /*position: fixed;*/
+    z-index: 100;
+}
+
+header h3 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    display: block;
+}
+header h3 svg {
+    display: inline-block;
+    vertical-align: text-top;
+    /*margin-right: 8px;*/
+}
+.offset {
+    width: 40px;
+    height: 40px;
+}
+header h3 span {
+    display: none;
+}
+header h3 a {
+    color: inherit;
+}
+header ul {
+    font-size: 0;
+}
+header ul li {
+     display: inline-block;
+    margin: 0 16px;
+    font-size: 16px;
+}
+/*CONTENT BLOCK STYLINGS*/
+.inner {
+    width: 960px;
+    margin: 0 auto;
+}
+#hero {
+    background: none;
+    margin-bottom: 0;
+
+}
+#hero p {
+    margin-bottom: 0;
+}
+.flex {
+    flex: 1;
+}
+.app {
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: #edeef0;
+    border-radius: 48px;
+    /*min-height: max(400px, calc(100vh - 120px));*/
+    min-height: max(400px, 100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.about-section {
+    min-height:0;
+    justify-content: left;
+    padding:90px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    text-align: left;
+}
+
+.app-mobile {
+    text-align: left;
+}
+.app-mobile .mobile-section {
+    padding-top: 10vh;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.mobile-section {
+    display: none;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.app .row:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.column {
+    float:left;
+}
+.app .odsy-mark{
+    font-size: 14px;
+    color: rgba(0,0,0,0.30);
+    font-weight: 900 !important;
+}
+.copyright {
+    color: rgba(0,0,0,0.30);
+}
+
+.app-team {
+    text-align: left !important;
+    padding: 90px;
+    padding-top: 180px;
+}
+.app-team .img {
+    float: right;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.team-row {
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.app-team .img-col {
+    max-width: 240px;
+    min-width: 240px;
+    /*padding-left:40px;*/
+    padding-bottom:40px;
+    padding-right:40px;
+}
+
+.app:last-of-type {
+    margin-bottom: 0;
+}
+.app .icon {
+    margin: 0 auto 12px;
+    width: 40px;
+    height: 40px;
+}
+.app h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+.app p, .app a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 8px;
+    opacity: 0.8;
+    margin-bottom: 12px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.app a {
+    /*padding-top: 0;*/
+    /*font-size: 16px;*/
+    /*margin: 0 8px;*/
+    /*margin-bottom: 0;*/
+    /*opacity: 1;*/
+    font-weight: 700;
+
+}
+.previewed .content {
+    text-align: left;
+    padding-left: 88px;
+}
+.previewed .icon {
+    margin-left: 0;
+}
+.previewed .preview {
+    position: relative;
+    height: 256px;
+}
+.previewed .plugin {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 2;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 24%), 0px 24px 40px rgb(0 0 0 / 24%);
+    border-radius: 16px;
+}
+.previewed a {
+    margin-left: 0;
+    margin-right: 0;
+}
+#magician {
+    background-color: #7B61FF;
+    color: #fff;
+}
+#designos {
+    background-color: #18A0FB;
+    color: #fff;
+}
+#labs, #prototyper {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+.dark {
+    display: none;
+}
+.mobile-nav {
+    display: none;
+}
+
+.social-media-row img {
+    height: 22px;
+    margin-top: 8px;
+    margin-right: 8px;
+    opacity: 0.50;
+}
+
+
+@media screen and (max-width: 1040px) {
+    .inner {
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+@media all and (max-width: 772px) {
+    .mobile-section {
+        display: block;
+    }
+    .team-row {
+        display: none;
+    }
+
+}
+@media all and (min-width: 481px) {
+    header {
+        position: fixed;
+    }
+}
+@media all and (max-width: 480px) {
+
+    .desktop-only {
+        display: none;
+    }
+    .social-media-row img {
+        height: 20px;
+    }
+    .app {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .app-team {
+        padding: 0px;
+        padding-top: 90px;
+        padding-bottom: 150px;
+    }
+    .app-team p {
+        padding-top: 0px;
+    }
+
+    .app-team img {
+        margin-bottom: 8px;
+    }
+
+    .app p, .app a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .app h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .inner {
+        padding: 0px 30px;
+    }
+
+    .about-section {
+        padding: 0px;
+        padding-top: 90px;
+        padding-bottom: 150px;
+    }
+
+    .nav-elem {
+        display: block;
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    header.footer {
+        display: block;
+        text-align: center;
+        padding: 40px 20px;
+        position: relative !important;
+    }
+
+    header .nav-footer {
+        padding: 18px;
+        padding-top: 0px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .nav {
+        width: 100%;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    h3 {
+        width: 100%;
+    }
+
+    .active {
+        display: block;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Hamburger */
+    .navigation {
+        width: 100%;
+    }
+
+    .hamburger1 {
+        position: absolute;
+        right: 20px;
+        top: 27px;
+        height: 30px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        z-index: 120;
+    }
+
+    .hamburger1 div {
+        background-color: black;
+        position: relative;
+        width: 30px;
+        height: 4px;
+        margin: 2px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border-radius: 8px;
+    }
+
+    #toggle1 {
+        display: none;
+    }
+
+    #toggle1:checked + .hamburger1 .top {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-top: 15px;
+    }
+
+    #toggle1:checked + .hamburger1 .meat {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        margin-top: -6px;
+    }
+
+    #toggle1:checked + .hamburger1 .bottom {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+
+    #toggle1:checked ~ .mobile-menu {
+         height: 100vh;
+    }
+
+    #toggle1:checked ~ header {
+        position: fixed !important;
+    }
+    header {
+        position: relative;
+    }
+
+    /* Menu */
+    .mobile-menu {
+        width: 100%;
+        margin: 0;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: 1fr repeat(4, 0.5fr);
+        grid-row-gap: 25px;
+        padding: 0;
+        list-style: none;
+        clear: both;
+        height: 0px;
+        width: auto;
+        text-align: center;
+        overflow: hidden;
+        transition: height .25s ease;
+        z-index: 120;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+        position: fixed;
+        background: black;
+        min-width: calc(100% - 40px);
+    }
+
+    .mobile-menu a:first-child {
+        margin-top: 40px;
+    }
+
+    .mobile-menu a:last-child {
+        margin-bottom: calc(100vh - 300px);
+    }
+
+    .mobile-link {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .kbutton-nav {
+        height: 100vh;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+    header {
+        position: fixed !important;
+    }
+    header.footer {
+        position: fixed !important;
+    }
+
+
+}
+
+/*@media (prefers-color-scheme: dark)  {*/
+    body {
+        background: black;
+    }
+    header {
+        background: black;
+    }
+    header.header {
+        background: black;
+    }
+    h2 {
+        color: rgba(200, 200, 200, 1.0);
+    }
+    h3 {
+        color: rgba(200, 200, 200, 1.0);
+    }
+    p {
+        color: rgba(200, 200, 200, 1.0);
+    }
+    .app .odsy-mark {
+        color: rgba(255, 255, 255, 0.30);
+    }
+    a {
+        color: rgba(200, 200, 200, 1.0);
+    }
+    .copyright {
+        color: rgba(255, 255,255, 0.30);
+    }
+    .light {
+        display: none;
+    }
+    .dark {
+        display: block;
+    }
+    ::selection {
+        background: rgba(255,255,255,0.15);
+    }
+    .hamburger1 div {
+        background: white;
+    }
+/*}*/
