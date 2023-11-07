@@ -1,0 +1,156 @@
+<?xml version="1.0" ?>
+<PCCSWebUpdate version="1.1">
+	<LatestForceUpdateVersion>0.0.0.0</LatestForceUpdateVersion>
+	<ForcedRMCodes></ForcedRMCodes>
+	<ForcedReleases></ForcedReleases>
+	<!-- Default full package -->
+	<Release value="">
+		<Name>Nokia Ovi Suite 3</Name>
+		<Version>3.8.54.0</Version>
+		<Manufacturer>Nokia</Manufacturer>
+		<Date>18122014</Date>
+		<!-- Size in kBs -->
+		<Size>103829</Size>
+		<Type>exe</Type>
+		<OsBlocked/>
+		<UpdateBlocked>false</UpdateBlocked>
+		<SilentInstParams/>
+		<Icon/>
+		<CustomData>ovi_suite_update</CustomData>
+		<!-- Language specific data -->
+		<Languages>
+			<Default>
+				<Description>Nokia Ovi Suite 3</Description>
+				<FileName>Nokia_Suite_update_full_ALL.exe</FileName>
+			</Default>
+		</Languages>
+	</Release>
+	<!-- Light 32 package -->
+	<Release value="">
+		<Name>Nokia Ovi Suite 3</Name>
+		<Version>3.8.54.0</Version>
+		<Manufacturer>Nokia</Manufacturer>
+		<Date>18122014</Date>
+		<!-- Size in kBs -->
+		<Size>83189</Size>
+		<Type>exe</Type>
+		<OsBlocked/>
+		<UpdateBlocked>false</UpdateBlocked>
+		<SilentInstParams/>
+		<Icon/>
+		<CustomData>32_light_ovi_suite_update</CustomData>
+		<!-- Language specific data -->
+		<Languages>
+			<Default>
+				<Description>Nokia Ovi Suite 3</Description>
+				<FileName>Nokia_Suite_update_light_ALL.exe</FileName>
+			</Default>
+		</Languages>
+		<RequiredInstallations>
+			<!-- VC80 32 -->
+			<GUID value="{1F146768-2624-4821-A5AD-57DCAD0CCEF6}">
+				<versionMin>1.0.3.0</versionMin>
+			</GUID>
+			<!-- VC90 32 -->
+			<GUID value="{41CEC149-C01B-4CDF-9137-1F2AC4AEAE08}">
+				<versionMin>1.0.1.2</versionMin>
+			</GUID>
+			<!-- VC100 32 -->
+			<GUID value="{B863EE58-C95F-4707-B45C-16E7628A0407}">
+				<versionMin>10.0.40219.1</versionMin>
+			</GUID>
+		</RequiredInstallations>
+	</Release>
+	<!-- Full 32 package -->
+	<Release value="">
+		<Name>Nokia Ovi Suite 3</Name>
+		<Version>3.8.54.0</Version>
+		<Manufacturer>Nokia</Manufacturer>
+		<Date>18122014</Date>
+		<!-- Size in kBs -->
+		<Size>103829</Size>
+		<Type>exe</Type>
+		<OsBlocked/>
+		<UpdateBlocked>false</UpdateBlocked>
+		<SilentInstParams/>
+		<Icon/>
+		<CustomData>32_full_ovi_suite_update</CustomData>
+		<!-- Language specific data -->
+		<Languages>
+			<Default>
+				<Description>Nokia Ovi Suite 3</Description>
+				<FileName>Nokia_Suite_update_full_ALL.exe</FileName>
+			</Default>
+		</Languages>
+	</Release>
+	<!-- Light 64 package -->
+	<Release value="">
+		<Name>Nokia Ovi Suite 3</Name>
+		<Version>3.8.54.0</Version>
+		<Manufacturer>Nokia</Manufacturer>
+		<Date>18122014</Date>
+		<!-- Size in kBs -->
+		<Size>83189</Size>
+		<Type>exe</Type>
+		<OsBlocked/>
+		<UpdateBlocked>false</UpdateBlocked>
+		<SilentInstParams/>
+		<Icon/>
+		<CustomData>64_light_ovi_suite_update</CustomData>
+		<!-- Language specific data -->
+		<Languages>
+			<Default>
+				<Description>Nokia Ovi Suite 3</Description>
+				<FileName>Nokia_Suite_update_light_ALL.exe</FileName>
+			</Default>
+		</Languages>
+		<RequiredInstallations>
+			<!-- VC80 32 -->
+			<GUID value="{1F146768-2624-4821-A5AD-57DCAD0CCEF6}">
+				<versionMin>1.0.3.0</versionMin>
+			</GUID>
+			<!-- VC90 32 -->
+			<GUID value="{41CEC149-C01B-4CDF-9137-1F2AC4AEAE08}">
+				<versionMin>1.0.1.2</versionMin>
+			</GUID>
+			<!-- VC80 64 -->
+			<GUID value="{55FB602C-BF61-447D-8849-5F001C0F830E}">
+				<versionMin>1.0.3.0</versionMin>
+			</GUID>
+			<!-- VC90 64 -->
+			<GUID value="{9961B3D5-3891-4D58-8BE3-42B13854A1A7}">
+				<versionMin>1.0.1.2</versionMin>
+			</GUID>
+			<!-- VC100 32 -->
+			<GUID value="{B863EE58-C95F-4707-B45C-16E7628A0407}">
+				<versionMin>10.0.40219.1</versionMin>
+			</GUID>
+			<!-- VC100 64 -->
+			<GUID value="{B643EE58-C95F-4707-B45C-16E7628A0407}">
+				<versionMin>10.0.40219.1</versionMin>
+			</GUID>
+		</RequiredInstallations>
+	</Release>
+	<!-- Full 64 package -->
+	<Release value="">
+		<Name>Nokia Ovi Suite 3</Name>
+		<Version>3.8.54.0</Version>
+		<Manufacturer>Nokia</Manufacturer>
+		<Date>18122014</Date>
+		<!-- Size in kBs -->
+		<Size>103829</Size>
+		<Type>exe</Type>
+		<OsBlocked/>
+		<UpdateBlocked>false</UpdateBlocked>
+		<SilentInstParams/>
+		<Icon/>
+		<CustomData>64_full_ovi_suite_update</CustomData>
+		<!-- Language specific data -->
+		<Languages>
+			<Default>
+				<Description>Nokia Ovi Suite 3</Description>
+				<FileName>Nokia_Suite_update_full_ALL.exe</FileName>
+			</Default>
+		</Languages>
+	</Release>
+</PCCSWebUpdate>
