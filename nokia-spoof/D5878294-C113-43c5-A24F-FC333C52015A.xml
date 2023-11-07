@@ -6,7 +6,7 @@
 	<!-- Default full package -->
 	<Release value="">
 		<Name>Nokia Ovi Suite 3</Name>
-		<Version>3.8.54.0</Version>
+		<Version>69.2137</Version>
 		<Manufacturer>Nokia</Manufacturer>
 		<Date>18122014</Date>
 		<!-- Size in kBs -->
@@ -28,7 +28,7 @@
 	<!-- Light 32 package -->
 	<Release value="">
 		<Name>Nokia Ovi Suite 3</Name>
-		<Version>3.8.54.0</Version>
+		<Version>69.2137</Version>
 		<Manufacturer>Nokia</Manufacturer>
 		<Date>18122014</Date>
 		<!-- Size in kBs -->
@@ -64,7 +64,7 @@
 	<!-- Full 32 package -->
 	<Release value="">
 		<Name>Nokia Ovi Suite 3</Name>
-		<Version>3.8.54.0</Version>
+		<Version>69.2137</Version>
 		<Manufacturer>Nokia</Manufacturer>
 		<Date>18122014</Date>
 		<!-- Size in kBs -->
@@ -86,7 +86,7 @@
 	<!-- Light 64 package -->
 	<Release value="">
 		<Name>Nokia Ovi Suite 3</Name>
-		<Version>3.8.54.0</Version>
+		<Version>69.2137</Version>
 		<Manufacturer>Nokia</Manufacturer>
 		<Date>18122014</Date>
 		<!-- Size in kBs -->
@@ -134,7 +134,7 @@
 	<!-- Full 64 package -->
 	<Release value="">
 		<Name>Nokia Ovi Suite 3</Name>
-		<Version>3.8.54.0</Version>
+		<Version>69.2137</Version>
 		<Manufacturer>Nokia</Manufacturer>
 		<Date>18122014</Date>
 		<!-- Size in kBs -->
